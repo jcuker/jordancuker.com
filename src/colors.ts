@@ -1,0 +1,6 @@
+export const COLORS = {
+    MAIN_BACKGROUND: '#37474F',
+    ACCENT_GREY: '#9d9d9d',
+    HEADER_BACKGROUND: '#263238',
+    CARD_BACKGROUND: '#607D8B',
+};
