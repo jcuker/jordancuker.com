@@ -1,27 +1,24 @@
 import React from "react";
-import { Card } from "antd";
-import { COLORS } from "../../colors";
+import './AppBody.css';
+import Card from "../shared/Card";
+import BodySection from './BodySection/BodySection';
 
 export default function AppBody(): JSX.Element {
     return (
-        <div style={styles.appBody} >
-            <Card bordered={false} style={styles.bodyCard}>
-                <p>Card content</p>
-                <p>Card content</p>
-                <p>Card content</p>
+        <div className='app-body' >
+            <Card id='top-card' style={{ flexDirection: 'column', marginBottom: 22, justifyContent: 'space-around', alignItems: 'center' }}>
+                <>
+                    <h1 className='top-card-text'>Hi, my name is Jordan!</h1>
+                    <img src='/me.jpg' className='body-pic'></img>
+                    <h3 className='top-card-text'>Welcome to my website.</h3>
+                </>
+            </Card>
+
+            <Card id='about-card'>
+                <>
+                    <BodySection iconName="https://picsum.photos/200" />
+                </>
             </Card>
         </div>
     );
 };
-
-const styles: any = {
-    appBody: {
-        alignSelf: 'center',
-        margin: 15
-    },
-    bodyCard: {
-        width: 300,
-        background: COLORS.CARD_BACKGROUND,
-        borderRadius: 6
-    }
-}

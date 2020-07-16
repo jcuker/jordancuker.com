@@ -1,0 +1,33 @@
+@import '../../index.css';
+
+.header-main {
+    background: var(--HEADER_BACKGROUND);
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: var(--body-padding);
+}
+
+.destination-span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.destination-icon {
+    margin-right: 5;
+    color: var(--ACCENT_GREY);
+}
+
+.destination-text {
+    color: var(--ACCENT_GREY);
+    margin: 0;
+}

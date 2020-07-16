@@ -3,33 +3,36 @@ import {
     FacebookFilled, TwitterSquareFilled, LinkedinFilled, GithubFilled, CustomerServiceFilled, MailFilled
 } from '@ant-design/icons';
 import { COLORS } from '../../colors';
+import './AppHeader.css';
 
 export default function AppHeader(): JSX.Element {
     return (
-        <div style={styles.headerMain}>
-            <span style={styles.destinationSpan} >
-                <FacebookFilled style={styles.destinationIcon} /><p style={styles.destinationText}>Facebook</p>
-            </span>
+        <div className='header-main'>
+            <div className='header-content'>
+                <span className='destination-span' >
+                    <FacebookFilled style={styles.destinationIcon} /><p className='destination-text'>Facebook</p>
+                </span>
 
-            <span style={styles.destinationSpan} >
-                <TwitterSquareFilled style={styles.destinationIcon} /><p style={styles.destinationText}>Twitter</p>
-            </span>
+                <span className='destination-span' >
+                    <TwitterSquareFilled style={styles.destinationIcon} /><p className='destination-text'>Twitter</p>
+                </span>
 
-            <span style={styles.destinationSpan} >
-                <LinkedinFilled style={styles.destinationIcon} /> <p style={styles.destinationText}>LinkedIn</p>
-            </span>
+                <span className='destination-span' >
+                    <LinkedinFilled style={styles.destinationIcon} /> <p className='destination-text'>LinkedIn</p>
+                </span>
 
-            <span style={styles.destinationSpan} >
-                <GithubFilled style={styles.destinationIcon} /><p style={styles.destinationText}>Github</p>
-            </span>
+                <span className='destination-span' >
+                    <GithubFilled style={styles.destinationIcon} /><p className='destination-text'>Github</p>
+                </span>
 
-            <span style={styles.destinationSpan} >
-                <CustomerServiceFilled style={styles.destinationIcon} /><p style={styles.destinationText}>Soundcloud</p>
-            </span>
+                <span className='destination-span' >
+                    <CustomerServiceFilled style={styles.destinationIcon} /><p className='destination-text'>Soundcloud</p>
+                </span>
 
-            <span style={styles.destinationSpan} >
-                <MailFilled style={styles.destinationIcon} /><p style={styles.destinationText}>Email</p>
-            </span>
+                <span className='destination-span' >
+                    <MailFilled style={styles.destinationIcon} /><p className='destination-text'>Email</p>
+                </span>
+            </div>
         </div>
     );
 };
@@ -40,8 +43,11 @@ const styles: any = {
         flexDirection: 'row',
         justifyContent: 'space-around',
         background: COLORS.HEADER_BACKGROUND,
-        height: '3.75%',
-        width: '100%'
+        height: '5%',
+        width: '100%',
+    },
+    headerContent: {
+
     },
     destinationSpan: {
         display: 'flex',

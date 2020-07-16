@@ -1,0 +1,9 @@
+@import '../../index.css';
+
+.default-card {
+    background: var(--CARD_BACKGROUND);
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    /* box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75); */
+}
