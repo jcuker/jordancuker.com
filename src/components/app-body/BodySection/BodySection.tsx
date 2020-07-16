@@ -1,28 +1,24 @@
 import React from 'react';
-import '../../../index.css';
-
+import '../AppBody.css';
+import ReactMarkdown from 'react-markdown';
 export type IconType = 'LOCAL' | 'REMOTE';
 
 export interface BodySectionProps {
-    iconName: string;
-    iconType?: IconType;
+   text: string;
+   icon: JSX.Element;
+   title: string;
 }
 
 export default function BodySection(props: BodySectionProps): JSX.Element {
-    function getImage() {
-        if (props.iconType && props.iconType === 'LOCAL') {
-            return <></>
-        } else {
-            return <img src={props.iconName} />
-        }
-    }
+   const parsedMarkdown = <ReactMarkdown source={props.text} className="body-text" />;
 
-    const image = getImage();
-
-    return (
-        <div>
-            <span>{image}<p className='body-text'>fdas</p></span>
-
-        </div>
-    )
-};
+   return (
+      <div>
+         <span className="body-section-header">
+            {props.icon}
+            <p className="body-section-title">{props.title}</p>
+         </span>
+         {parsedMarkdown}
+      </div>
+   );
+}
