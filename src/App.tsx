@@ -3,6 +3,7 @@ import './App.css';
 import { COLORS } from './colors';
 import AppBody from './components/app-body/AppBody';
 import AppHeader from './components/app-header/AppHeader';
+import Copyright from './components/copyright/Copyright';
 
 function App(): JSX.Element {
    return (
@@ -17,6 +18,7 @@ function App(): JSX.Element {
       >
          <AppHeader />
          <AppBody />
+         <Copyright />
       </div>
    );
 }

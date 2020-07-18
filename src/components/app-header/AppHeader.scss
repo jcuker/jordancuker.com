@@ -1,0 +1,39 @@
+@import '../../index.css';
+
+.header-main {
+   background: var(--HEADER_BACKGROUND);
+   height: 48px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.header-content {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: var(--DEFAULT_WIDTH);
+   max-width: var(--MAX_WIDTH);
+}
+
+.destination-span {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   align-content: center;
+}
+
+.destination-icon {
+   margin-right: 5px;
+   color: var(--ACCENT_GREY);
+}
+
+.destination-text {
+   color: var(--ACCENT_GREY);
+   margin: 0;
+}
+
+.destination-icon {
+   margin-right: 5px;
+   color: var(--ACCENT_GREY);
+}
