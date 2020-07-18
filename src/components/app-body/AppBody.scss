@@ -14,9 +14,21 @@
       justify-content: space-around;
       align-items: center;
 
+      @media screen and (max-width: 420px) {
+         h1 {
+            font-size: 22px;
+         }
+      }
+
       .top-card-text {
          color: var(--TOP_CARD_TEXT_COLOR);
          margin: 0;
+      }
+
+      .top-card-too-small {
+         color: var(--TOP_CARD_TEXT_COLOR);
+         margin: 0;
+         font-size: 10px;
       }
 
       .body-pic {

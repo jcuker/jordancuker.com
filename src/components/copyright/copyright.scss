@@ -1,9 +1,11 @@
-@import '../../App.css';
+@import '../app/App.scss';
 
 .copyright {
-   position: absolute;
+   position: relative;
    bottom: 2.5px;
    left: 5px;
    color: var(--WHITE);
-   font-size: 11px;
+   font-size: 10px;
+   width: 50vw;
+   margin-top: auto;
 }

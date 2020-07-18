@@ -1,17 +1,27 @@
 import React from 'react';
 import './AppBody.scss';
-import Card from '../Card/Card';
-import BodySection from './BodySection/BodySection';
+import Card from '../card/Card';
+import BodySection from './body-section/BodySection';
 import { Info, Code, LibraryMusic, VideogameAsset } from '@material-ui/icons';
 import { BODY_STRINGS } from '../../shared/strings';
+import { useWindowSize, UseWindowSizeType } from '../../shared/hooks';
 
 export default function AppBody(): JSX.Element {
+   const width = useWindowSize(UseWindowSizeType.width);
+
+   const imageOrText =
+      width > 420 ? (
+         <img src="/me.jpg" className="body-pic" alt="me" />
+      ) : (
+         <p className="top-card-too-small">{BODY_STRINGS.screenTooSmall}</p>
+      );
+
    return (
       <div className="app-body">
          <Card id="top-card" className="top-card">
             <>
                <h1 className="top-card-text">{BODY_STRINGS.topSection.title}</h1>
-               <img src="/me.jpg" className="body-pic" alt="me"></img>
+               {imageOrText}
                <h3 className="top-card-text">{BODY_STRINGS.topSection.text}</h3>
             </>
          </Card>

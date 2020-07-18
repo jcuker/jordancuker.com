@@ -1,6 +1,5 @@
-import React from 'react';
 import './Card.scss';
-import { CSSProperties } from '@material-ui/core/styles/withStyles';
+import React, { CSSProperties } from 'react';
 
 export interface CardProps {
    style?: CSSProperties;
@@ -11,11 +10,7 @@ export interface CardProps {
 
 export default function Card(props: CardProps): JSX.Element {
    return (
-      <div
-         className={props.className ? props.className : 'default-card'}
-         style={{ ...props.style }}
-         id={props.id ? props.id : undefined}
-      >
+      <div className={props.className ? props.className : 'default-card'} style={{ ...props.style }} id={props.id}>
          {props.children}
       </div>
    );

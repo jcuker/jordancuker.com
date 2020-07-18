@@ -15,15 +15,16 @@ jobs:
 
          - uses: actions/setup-node@master
            with:
-              node-version: '10.x'
+              node-version: '12.x'
 
-         - name: Install dependencies
+         - name: Install npm dependencies
            run: npm install
 
          - name: Build project
            run: npm run build
 
          - uses: w9jds/firebase-action@master
+           name: Deploy to Firebase
            with:
               args: deploy --only hosting
            env:
