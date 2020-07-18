@@ -10,7 +10,7 @@ export default function AppBody(): JSX.Element {
    const width = useWindowSize(UseWindowSizeType.width);
 
    const imageOrText =
-      width > 420 ? (
+      width > 360 ? (
          <img src="/me.jpg" className="body-pic" alt="me" />
       ) : (
          <p className="top-card-too-small">{BODY_STRINGS.screenTooSmall}</p>

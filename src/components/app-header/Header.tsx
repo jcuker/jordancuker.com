@@ -5,33 +5,45 @@ export default function NormalHeader(): JSX.Element {
    return (
       <div className="header-content">
          <span className="destination-span">
-            <Facebook className="destination-icon" />
-            <p className="destination-text">Facebook</p>
+            <a href="https://www.facebook.com/jordancuker">
+               <Facebook className="destination-icon" />
+               <p className="destination-text">Facebook</p>
+            </a>
          </span>
 
          <span className="destination-span">
-            <Twitter className="destination-icon" />
-            <p className="destination-text">Twitter</p>
+            <a href="https://twitter.com/Cukes_">
+               <Twitter className="destination-icon" />
+               <p className="destination-text">Twitter</p>
+            </a>
          </span>
 
          <span className="destination-span">
-            <LinkedIn className="destination-icon" />
-            <p className="destination-text">LinkedIn</p>
+            <a href="https://www.linkedin.com/in/jcuker/">
+               <LinkedIn className="destination-icon" />
+               <p className="destination-text">LinkedIn</p>
+            </a>
          </span>
 
          <span className="destination-span">
-            <GitHub className="destination-icon" />
-            <p className="destination-text">Github</p>
+            <a href="https://github.com/jcuker">
+               <GitHub className="destination-icon" />
+               <p className="destination-text">Github</p>
+            </a>
          </span>
 
          <span className="destination-span">
-            <MusicNote className="destination-icon" />
-            <p className="destination-text">Soundcloud</p>
+            <a href="https://soundcloud.com/jordan-alexander-cuker">
+               <MusicNote className="destination-icon" />
+               <p className="destination-text">Soundcloud</p>
+            </a>
          </span>
 
          <span className="destination-span">
-            <Mail className="destination-icon" />
-            <p className="destination-text">Email</p>
+            <a href="mailto:jordan.cuker@gmail.com">
+               <Mail className="destination-icon" />
+               <p className="destination-text">Email</p>
+            </a>
          </span>
       </div>
    );
