@@ -1,7 +1,7 @@
 export const BODY_STRINGS = {
    topSection: {
       title: `Hi, my name is Jordan!`,
-      text: `Cuker is pronounced like 'su-curr'.`,
+      text: `Cuker is pronounced like 'sue-curr'.`,
    },
    aboutSection: {
       title: `About`,
@@ -17,7 +17,7 @@ export const BODY_STRINGS = {
    },
    musicSection: {
       title: `Music`,
-      text: `Lover of all flavours of metal. I post infrequent songs/demos on Soundcloud. I try posting videos on my Youtube channel on Fridays - join me in making #FridayRiffery a thing! I co-host [Two Metal Fans Podcast](https://twometal.fans) with my best friend. We post episodes every Monday talking about music, pop culture, video games, and more through the lens of being metal heads.`,
+      text: `Lover of all flavours of metal. I post infrequent songs/demos on SoundCloud. I try posting videos on my Youtube channel on Fridays - join me in making #FridayRiffery a thing! I co-host [Two Metal Fans Podcast](https://twometal.fans) with my best friend. We post episodes every Monday talking about music, pop culture, video games, and more through the lens of being metal heads.`,
    },
    screenTooSmall: 'Your screen is too small to see this picture',
 };
