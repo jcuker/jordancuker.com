@@ -1,21 +1,12 @@
-@import '~antd/dist/antd.css';
-
 body {
-   margin: 0;
-   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-      'Droid Sans', 'Helvetica Neue', sans-serif;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-:root {
-   --MAIN_BACKGROUND: #37474f;
-   --ACCENT_GREY: #9d9d9d;
-   --HEADER_BACKGROUND: #263238;
-   --CARD_BACKGROUND: #607d8b;
-   --WHITE: rgb(255, 255, 255);
-   --TOP_CARD_TEXT_COLOR: #d5d5d5;
-   --BLACK: #000;
-   --MAX_WIDTH: 845px;
-   --DEFAULT_WIDTH: 75%;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
